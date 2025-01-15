@@ -1,28 +1,42 @@
 # Elektronische Last
-Hierbei handelt es sich um einen elektronische Last, die im Bereich von x..y V a..b A mit einer maximalen durchschnittlichen Leistung von z W arbeitet.
 
-## Schaltplan
+Hierbei handelt es sich um einen elektronische Last, die im Bereich von x..y V a..b A mit einer maximalen durchschnittlichen Leistung von z W arbeitet. Zum einfacheren Debugging wurde die Funktion auf verschiedene Leiterplatten aufgeteilt. Es gibt eine Hauptplatine, die die Leistung der Quelle abnimmt und 3 Platinen (eine Platine mit Sollbruchstellen) für einen Signalgenerator (die Last kann auch gepulste Lasten aufnehmen), Hilfsspannungen und einen ersten Protoyp der Leistungsstufe inklusive Stromregelschleife.
+
+TBD Features
 Die Schaltung ist komplett "analog", besitzt also keinen Mikrocontroller.
 
-### Leistungsplatine
-#### Seite x
-![Schaltplan](images/main.png)
+## Schaltplan
+
+### Hauptplatine
+
+![Haupt-Schaltplan 1](images/main/main-1.png)
+![Haupt-Schaltplan 2](images/main/main-2.png)
+![Haupt-Schaltplan 3](images/main/main-3.png)
+![Haupt-Schaltplan 4](images/main/main-4.png)
 
 ### Signalgenerator + Hilfsspannungen + Prototyp der Leistungsstufe
-#### Seite x
-![Schaltplan](images/mess.png)
+
+![Hilfs-Schaltplan 1](images/helper/helper-1.png)
+![Hilfs-Schaltplan 2](images/helper/helper-2.png)
+![Hilfs-Schaltplan 3](images/helper/helper-3.png)
 
 ## Layout
-### Leistungsplatine
-![Layout](images/layout.png)
+
+### Hauptplatine
+
+![Layout](images/main/layout.png)
 
 ### Signalgenerator + Hilfsspannungen + Prototyp der Leistungsstufe
-![Layout](images/layout2.png)
+
+![Layout](images/helper/layout.png)
 
 ## 3D
-### Leistungsplatine
+
+### Hauptplatine
+
 Hier fehlt der Kühlkörper, der über den BJTs innerhalb der weißen Markierungen sitzt.
-![3D](images/3D.png)
+![3D](images/main/3D.png)
 
 ### Signalgenerator + Hilfsspannungen + Prototyp der Leistungsstufe
-![3D](images/3D2.png)
+
+![3D](images/helper/3D.png)
